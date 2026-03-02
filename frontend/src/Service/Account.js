@@ -69,7 +69,6 @@ export default function Account() {
         // Custom string error (e.g., from HTTPException)
         setError(detail);
       } else {
-        // Fallback
         setError(isLogin ? 'Login failed.' : 'Registration failed.');
       }
     }
