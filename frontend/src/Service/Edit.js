@@ -24,6 +24,7 @@ export default function Edit () {
     useEffect(() => {
       if (!token) {
         setError("Please log in first.");
+        navigate('/account');
         return;
       }
       setError('');
@@ -169,7 +170,6 @@ export default function Edit () {
       <div className="edit-container">
         <h2 className="edit-title">Edit mode</h2>
         <h3 className="edit-subtitle">Click on the entry to modify:</h3>
-        //initialize the table.
           <div className="body">
         <table>
           <thead>

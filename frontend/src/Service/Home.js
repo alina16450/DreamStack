@@ -26,6 +26,7 @@ export default function Home() {
   useEffect(() => {
     if (!token) {
       setError("Please log in first.");
+      navigate('/account');
       return;
     }
     setError('');
@@ -113,7 +114,6 @@ export default function Home() {
       <div className="page-container">
         <header className="header">
           <h1>DreamStack</h1>
-          //using bootstrap icons for the navigation buttons
           <nav className='nav'>
             <button 
               className={`b1 ${location.pathname === '/' ? 'active-nav' : ''}`}
@@ -143,7 +143,6 @@ export default function Home() {
         </header>
         <h5 className="tagline">Save it. Plan it. Live it.</h5>
 
-        //create the table that displays the calculated statistics.
         <div className="stats-summary">
           <div className="stat-card">
             <h3>Total Items</h3>
@@ -163,7 +162,6 @@ export default function Home() {
           </div>
         </div>
 
-        //when the filter dropdown is selected, it triggers a setCategoryFilter which is handled in Filters.js . Takes the value from the dropdown and passes it to the hook.
         <div className="filter-dropdowns">
           <select 
             value={categoryFilter} 
@@ -188,14 +186,11 @@ export default function Home() {
             <option value="false">Not Visited</option>
           </select>
         </div>
-        //start of set up of the data table.
         <div className="body">
           {error && <div className="error">{error}</div>}
           <table className="data-table">
             <thead>
               <tr>
-              //integrated the sort methods into the table headers to make it intuitive, and used up and down arrow to signify direction of sort. Once a header square is 
-              //clicked, the sort for that attribute is triggered.
                 <th onClick={() => requestSort('name')}>
                   Place {sortConfig.key === 'name' && (sortConfig.ascending ? '▵' : '▿')}
                 </th>
@@ -215,8 +210,6 @@ export default function Home() {
               </tr>
             </thead>
             <tbody>
-                  //using .map to display each attribute of each item in its respective spot. The category attribute creates a tag for the items with the most common category 
-                  //so they can be given extra attention in .css
               {filteredItems.map(item => (
                 <tr key={item.id}>
                   <td>{item.name}</td>

@@ -103,6 +103,11 @@ export default function Account() {
     setForm({ username: '', password: '' });
   };
 
+  const handleDemo = () => {
+    setForm({ username: 'demo', password: 'TEST1!pw' });
+    
+  };
+
   // --- Render ---
   if (!user) {
     return (
@@ -191,7 +196,9 @@ export default function Account() {
               }
             </div>
           </div>
+            <button className="demo-btn" onClick={handleDemo}>Demo Account</button>
         </div>
+        
       </div>
     );
   }

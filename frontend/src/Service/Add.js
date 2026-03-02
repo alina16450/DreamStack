@@ -64,6 +64,7 @@ export default function Add() {
   useEffect(() => {
     if (!token) {
       setError("Please log in first.");
+      navigate('/account');
       return;
     }
     setError('');
@@ -106,8 +107,6 @@ export default function Add() {
       <h5 className="tagline">Save it. Plan it. Live it.</h5>
 
       <h2 className="instructionAdd">Add bucket list item</h2>
-
-      //initialize the input fields, and have each one linked to its own useState hook.
       <div className="add-form">
   <form className="form-grid" onSubmit={handleSubmit}>
     {error && <div className="error-message">{error}</div>}
@@ -144,8 +143,6 @@ export default function Add() {
       <label>Description:</label>
       <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} required />
     </div>
-
-    //create the button which will be used for submitting.
     <button type="submit" className="submit-btn">Add +</button>
   </form>
 </div>

@@ -57,7 +57,7 @@ tr { cursor: pointer; transition: background-color 0.2s; }
 
 
 /* Home Page */
-body { background-image:url('../Resources/dreamstack_background.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}
+body { background-image:url('../../public/dreamstack_background.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}
 .truncate-cell { max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .home table { width: 80%; border-collapse: collapse; margin-top: 20px; }
 .check-mark { position: relative; cursor: pointer; width: 20px; height: 20px; appearance: none; -webkit-appearance: none;
@@ -102,4 +102,5 @@ body { background-image:url('../Resources/dreamstack_background.png'); backgroun
 .bucket-list { list-style: none; padding: 0; }
 .bucket-item { padding: 0.5rem; border-bottom: 1px solid #B1B1B1; cursor: pointer; }
 .bucket-item:hover { background: #B1B1B1; }
+.demo-btn { background-color:#B1B1B1; color: #02542D; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-family: 'Koh Santepheap'; margin-top:6%; margin-left:40% }
 .account-container { display: flex; flex-direction: column; align-items: center; height: 50vh; font-family: 'Koh Santepheap'; color: #B1B1B1; }
