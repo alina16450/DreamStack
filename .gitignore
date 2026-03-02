@@ -19,3 +19,8 @@ node_modules/
 __pycache__/
 .venv/
 .idea/
+
+node_modules/
+__pycache__/
+.venv/
+.idea/
