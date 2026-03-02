@@ -15,3 +15,7 @@ venv/
 # OS / IDE
 .DS_Store
 .idea/
+node_modules/
+__pycache__/
+.venv/
+.idea/
