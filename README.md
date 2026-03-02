@@ -58,10 +58,10 @@ pytest
 ---
 
 ## Repository Structure
-backend/ # FastAPI application
-frontend/ # React application
-docker-compose.yml
-README.md
+- backend/ # FastAPI application
+- frontend/ # React application
+- docker-compose.yml
+- README.md
 
 ## Running the Full Application (Recommended)
 ```bash
