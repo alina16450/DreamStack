@@ -1,6 +1,6 @@
 from sqlalchemy.exc import IntegrityError
-from app.Service.models import User
-from app.Service.Auth import hash_password, verify_password
+from app.app.Service.models import User
+from app.app.Service.Auth import hash_password, verify_password
 from sqlmodel import Session, select
 
 

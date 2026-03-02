@@ -6,15 +6,16 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from fastapi.security import OAuth2PasswordRequestForm
 
-from app.Repository.UserManager import UserManager
-from app.Service.Auth import get_current_user, create_access_token, hash_password
-from app.Service.models import BucketItem, BucketItemCreate, BucketItemUpdate, UserRead, UserCreate, UserUpdate, \
+
+from app.app.Service.Auth import get_current_user, create_access_token, hash_password
+from app.app.Service.models import BucketItem, BucketItemCreate, BucketItemUpdate, UserRead, UserCreate, UserUpdate, \
     User, BucketItemRead
-from app.Service.database import get_session, init_db
+from app.app.Service.database import get_session, init_db
 from sqlmodel import Session
 
-from app.Repository.BucketListManager import BucketListManager
+from app.app.Repository.BucketListManager import BucketListManager
 
+from app.app.Repository.UserManager import UserManager
 
 app = FastAPI()
 

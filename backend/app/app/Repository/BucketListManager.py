@@ -1,5 +1,5 @@
 from sqlmodel import Session, select
-from app.Service.models import BucketItem
+from app.app.Service.models import BucketItem
 from sqlalchemy import desc
 
 

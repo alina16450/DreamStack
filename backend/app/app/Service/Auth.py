@@ -5,8 +5,8 @@ from passlib.context import CryptContext
 from sqlmodel import Session
 from datetime import datetime, timedelta
 
-from app.Service.database import get_session
-from app.Service.models import User
+from app.app.Service.database import get_session
+from app.app.Service.models import User
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
 
