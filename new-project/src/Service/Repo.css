@@ -1,0 +1,105 @@
+
+/* Header */
+.header{ display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #B1B1B1; text-decoration: #B1B1B1; }
+.header h1{ font-family: 'Koh Santepheap'; font-size: 60px; color: #B1B1B1; margin-bottom: 0; margin-left: 40px; }
+.nav button { font-size: 1.6rem; padding: 0.5rem 1rem; /* Increases clickable area */
+  border: none; background: none; color: #B1B1B1; transition: all 0.2s ease; }
+.nav .b1, .nav .b2, .nav .b3 .nav .b4 { font-size: 1.6rem; }
+.active-nav { color: #02542D !important; }
+.nav button { font-size: 1.5rem; padding: 0.5rem; background: none; border: none; color: #B1B1B1; cursor: pointer; transition: color 0.2s; }
+.nav button:active { transform: scale(0.95); }
+.nav { display: flex; gap: 20px; margin-right: 100px; }
+.tagline{ font-family: 'Koh Santepheap'; font-size: 20px; color: #B1B1B1; margin-top: 0; margin-left: 100px; }
+
+
+/* Add Page */
+.instructionAdd{ font-family: 'Koh Santepheap'; font-size: 32px; color: #B1B1B1; margin-top: 50px; text-align: center; }
+.instructionAdd::after{ content:''; display: block; width: 40%; margin: 10px auto; border-bottom: 1px solid #B1B1B1; margin-top: 50px; }
+.add-form { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+.form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+.form-group { display: flex; flex-direction: column; }
+.form-group label { margin-bottom: 8px; font-family: 'Koh Santepheap'; color: #B1B1B1; font-size: 18px; }
+.form-group input,
+.form-group select { padding: 12px; border: 1px solid #B1B1B1; background-color: #B1B1B1; color: #232323; border-radius: 5px; font-size: 16px; }
+.full-width { grid-column: span 2; }
+.full-width input { width: 97%; max-width: 100%; }
+.submit-btn { grid-column: span 2; width: 200px; margin: 10px auto; padding: 12px; background-color: #02542D; color: #232323; border: none; border-radius: 5px;
+  font-size: 18px; cursor: pointer; font-family: 'Koh Santepheap'; }
+.error-message { grid-column: span 2; color: red; text-align: center; margin-bottom: 15px; }
+
+
+/* Edit Page */
+table.edit-table td.last { border: none; }
+.edit tbody tr:hover { background-color: #484646; color: #B1B1B1; }
+.edit table { width: 70%; border-collapse: collapse; margin-top: 20px; }
+.selected-row { background-color: #484646; cursor: pointer; }
+.delete-btn { border: none; background: none; color:#02542D; padding: 0; margin: 0; }
+td.last { border: none !important; }
+.error { color: red; margin-top: 10px; font-family: 'Koh Santepheap'; }
+.edit-title,
+.edit-subtitle { font-family: 'Koh Santepheap'; text-align: center; width: 100%; margin: 0 auto; }
+.edit-titles { text-align: center; margin-bottom: 1rem; }
+.edit-title { color: #02542D; font-size: 2.2rem; margin-bottom: 0.25rem;  line-height: 1.2;}
+.edit-subtitle { color: #B1B1B1; font-size: 1.5rem; margin-bottom: 0;  line-height: 1.3; font-family: 'Koh Santepheap'; }
+.inline-input,
+.form-input { background-color: #484646; font-size: 1.0em; color: #B1B1B1; border: 1px solid #484646; padding: 0.5rem; border-radius: 4px; font-family: 'Koh Santepheap'; }
+.inline-input::placeholder,
+.form-input::placeholder { color: #B1B1B1; font-family: 'Koh Santepheap'; font-size: 1.2em }
+.inline-input:focus,
+.form-input:focus { outline: none; box-shadow: 0 0 0 2px rgba(158, 159, 160, 0.25); }
+
+/* Edit/Home table */
+.body { display: flex; flex-direction: column; align-items: center; }
+.home, .edit thead th { font-size: 1.2em; color: #B1B1B1; }
+.home, .edit tbody td { color: #B1B1B1; font-family: 'Koh Santepheap'; }
+.home th, .home td, .edit th,  .edit td { border: 1px solid #B1B1B1; padding: 8px; text-align: left; }
+tr { cursor: pointer; transition: background-color 0.2s; }
+
+
+/* Home Page */
+body { background-image:url('../Resources/dreamstack_background.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}
+.truncate-cell { max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.home table { width: 80%; border-collapse: collapse; margin-top: 20px; }
+.check-mark { position: relative; cursor: pointer; width: 20px; height: 20px; appearance: none; -webkit-appearance: none;
+  background-color: #B1B1B1; border: 1px solid #232323; border-radius: 3px; }
+.check-mark:checked { background-color: #02542D; border-color: #B1B1B1; }
+.check-mark:checked::after { content: "✓"; position: absolute; color: #B1B1B1; font-size: 14px; font-weight: bold; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.stats-summary { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 15px; margin: 20px 0; padding: 15px; background-color: rgba(72, 70, 70, 0.19); border-radius: 8px; }
+.stat-card { text-align: center; min-width: 120px; padding: 10px; background-color: #232323; border-radius: 6px; }
+.stat-card h3 { margin: 0 0 5px 0; color: #B1B1B1; font-size: 14px; font-weight: normal; }
+.stat-card p { margin: 0; color: #02542D; font-size: 18px; font-weight: bold; }
+
+.highlight-newest { border-left: 4px solid #02542D; }
+.highlight-oldest { border-left: 4px solid #B1B1B1; }
+.highlight-common { background-color: rgba(255, 215, 0, 0.1); }
+.highlight-visited { background-color: rgba(2, 84, 45, 0.1); }
+.highlight-not-visited { background-color: rgba(177, 177, 177, 0.1); }
+.common-tag { display: inline-block; margin-left: 8px; padding: 2px 8px; background-color: #FFD700; color: #232323; border-radius: 10px; font-size: 12px; }
+.status-text { margin-left: 5px; }
+
+
+/* No Page */
+.noPage { color: #B1B1B1; font-family: 'Koh Santepheap'; text-align: center; }
+.no-page { font-size: 150px; margin-bottom: 10px; }
+
+
+/* Account Page */
+.account-container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+.auth-container, .account-page { max-width: 600px; margin: auto; padding: 1em; }
+.auth-title { text-align: center; font-family: 'Koh Santepheap'; color: #B1B1B1; margin-bottom: 1rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; margin-bottom: 0.25rem; font-family: 'Koh Santepheap'; font-weight: bold; }
+.form-input { width: 100%; padding: 0.5rem; border: 1px solid #B1B1B1; border-radius: 4px; }
+.password-hint, .username-hint { font-size: 0.85rem; font-family: 'Koh Santepheap'; color: #666; margin-top: 0.25rem; }
+.form-error { color: red; font-family: 'Koh Santepheap'; margin-bottom: 1rem; }
+.btn-group { display: flex; gap: 0.5rem; margin-top: 1rem; }
+.btn { padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer; }
+.btn-primary { background: #02542D; color: #B1B1B1; font-family: 'Koh Santepheap';}
+.btn-danger  { background: #dc3545; color: #B1B1B1; font-family: 'Koh Santepheap'; }
+.btn-secondary { background: #6c757d; color: #B1B1B1; }
+.toggle-link { text-decoration: none; color: #B1B1B1; font-family: 'Koh Santepheap'; }
+.link-btn { background: none; border: none; color: #02542D; cursor: pointer; font-family: 'Koh Santepheap'; }
+.bucket-list { list-style: none; padding: 0; }
+.bucket-item { padding: 0.5rem; border-bottom: 1px solid #B1B1B1; cursor: pointer; }
+.bucket-item:hover { background: #B1B1B1; }
+.account-container { display: flex; flex-direction: column; align-items: center; height: 50vh; font-family: 'Koh Santepheap'; color: #B1B1B1; }
