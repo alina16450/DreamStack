@@ -2,9 +2,7 @@
 DreamStack is a fullstack bucket list management application designed to demonstrate modern web development practices, clean architecture, and secure authentication workflows.
 
 ### Concept and Purpose:
-This project was designed with a need I encountered in my life, where I would come across an interesting location that I would love to visit in a country and add it to a notepad file on my phone.
-That way, next time I find myself in that country, I have an easy list of interesting activities/locations. This list quickly turned into unwieldy chaos, in desperate need of an update.
-DreamStack is designed to solve this problem for myself and any other user that may find themselves with a similar problem. 
+This project was designed with a need I encountered in my life, where I would come across an interesting location that I would love to visit in a country and add it to a notepad file on my phone. That way, next time I find myself in that country, I have an easy list of interesting activities/locations. This list quickly turned into unwieldy chaos, in desperate need of an update. DreamStack is designed to solve this problem for myself and any other user that may find themselves with a similar problem.
 
 
 ## Tech Stack
@@ -28,7 +26,8 @@ SQLite Database
 
 The frontend and backend are fully decoupled and communicate via RESTful API endpoints.
 
----
+##  Deployment
+The application is live and publicly accessible. It is deployed on an AWS EC2 instance running the full Docker Compose stack. An Elastic IP is assigned to the instance and tied to a verified custom domain, ensuring a stable and professional production URL (see URL in attached link).
 
 ## Features
 
@@ -73,7 +72,7 @@ Frontend: http://localhost:3000
 
 Option 2: Manual Development Mode
 #Backend
-See: backend/READNE.md
+See: backend/README.md
 #Frontend
 See: frontend/README.md
 
@@ -85,3 +84,4 @@ See: frontend/README.md
 - SQL relational modeling
 - Test-driven development
 - Containerized deployment
+- Cloud infrastructure setup and management (AWS EC2, Elastic IP, custom domain)
